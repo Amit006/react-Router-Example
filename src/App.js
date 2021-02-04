@@ -14,7 +14,7 @@ import {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router history={history}>
       <div>
         <Switch>
           <Route exact path="/register" component={Register} />
@@ -22,6 +22,6 @@ export default function App() {
           <Route exact path="/" component={Home} />
         </Switch>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
